@@ -1,0 +1,219 @@
+*, *::before, *::after {
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+ }
+
+html {
+     height: 100%; /* makes sure our HTML takes up 100% of the browser window */
+     font-size: 100%;
+ }
+ 
+ body {
+     font-family: 'Roboto', sans-serif; /* sets our font to the "Open Sans" typeface */
+     font-weight: 300px;
+     color: #4c4c4c;             /* sets the text color to white */
+     min-height: 100%;  /* says the height of the body must be, at minimum, 100% of the window */
+     /*background: #4285f4; */
+ }
+
+h1 {
+    font-weight: normal;
+}
+ 
+ body.landing {
+    /* background-color: #4285f4; /* sets the background color to an RGB value (see below) */
+     min-height: 800px;
+ }
+
+.container {
+    padding-bottom: 50px;
+    
+}
+
+.content {
+    padding: 50px;
+    min-height: 600px;
+}
+/* -------- navigation styles ---------- */
+.navbar {
+    /*padding: 0.5rem;
+     /*background-color: #4c4c4c; */
+    background: #4285f4;
+    color: white;
+ }
+ 
+ .navbar .logo {
+     position: relative; /* positioning will be explained in a resource */
+     left: 2rem;
+ }
+
+.navigation {
+    list-style: none;
+    margin: 0; 
+    border: 1px solid black;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-start;
+}
+    
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+
+.navigation a:hover {
+  background: darken(deepskyblue, 2%);
+  text-decoration: underline;
+}
+
+#header-img {
+    margin: 0 auto;
+    display: inline-block;
+    width: 30%;
+    float:left; 
+/*    border: 1px solid black;*/
+    border-radius: 15px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+#headerInfo {
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+
+/* -------- myInfo styles ---------- */
+#myInfo {
+    margin: 0 auto;
+    font-size: 32px;
+    padding: 10px; 
+}
+
+/* -------------- Footer styles ---------------*/
+footer {
+    width: 100%;
+    /*background-color: #d0d0d0; */
+    height:150px;
+    /*margin: 0 auto; */
+    padding: 30px;
+    margin-top: -50px;
+    border: 1px solid black;
+}
+
+.social-icons {
+    float:right;
+    padding:0 100px 20px 0;
+}
+
+#social {
+    
+}
+#social li {
+    
+    display:inline-block;
+}
+
+#social li img {
+  width: 64px;
+  height: 64px;
+  -webkit-box-reflect: below 2px
+  -webkit-gradient(linear, left top, left bottom, from(transparent),
+  color-stop(0.7, transparent), to(rgba(255,255,255,.5))); /* reflection is supported by webkit only */
+  -webkit-transition: all 0.3s;
+  -webkit-transform-origin: 50% 100%;
+}
+
+#social li:hover img { 
+  -webkit-transform: scale(2);
+  margin: 0 2em;
+  border: 0.1px solid red;
+  border-radius: 5.5px;
+  background-color: #4285f4;
+  background-clip: inherit;
+}
+
+#social li:hover + li img,
+#social li.prev img {
+  -webkit-transform: scale(1.5);
+  margin: 0 1.5em;
+}
+
+
+.rotate {
+    transform: rotate(90deg);
+    /*transform: rotate(180deg);*/
+    transition: .3s;
+}
+.rotate-initial {
+    transform: rotate(0deg);
+    transition: .3s;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0; }
+
+
+@media all and (max-width: 800px) {
+   html { font-size: 120%; }
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+   html { font-size: 112%; }
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+}
+  
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+  
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+    
+    #header-img {
+        width:100%;
+        display:block;
+        float:none;
+    }
+    
+    #header-info {
+        width:100%;
+        display:block;
+    }
+
+  footer {
+    width: 100%;
+    /*background-color: #d0d0d0; */
+    height:150px;
+    margin: 0 auto;
+    padding: 10px;
+}
+  .social-icons {
+    float:none;
+    margin:0 auto;
+}
+}
