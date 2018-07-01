@@ -1,0 +1,38 @@
+.resumecopy {
+    padding:15px;
+}
+
+/* ------------------- Work Styles -------------------------------*/
+#work {
+    /*background-image: url('http://placekitten.com/1500/1000');*/
+    background-repeat: no-repeat;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;  
+}
+
+.work-title {
+    font-size: 24px;
+    font-weight: 800;
+    display: block;
+    min-height: 20px;
+    cursor:pointer;
+}
+.work-copy {
+    display: none;
+}
+
+.work-copy-text {
+    float: left;
+    display: inline-block;
+    width:80%;
+}
+
+.work-copy-image {
+    display: inline-block;
+    
+}
+
+hr {background-color: #3cb5f9;}

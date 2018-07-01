@@ -6,15 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,300">
         <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> -->
         <link rel="stylesheet" type="text/css" href="styles/main.css">
         <link rel="stylesheet" type="text/css" href="styles/playground.css">
     </head>
     <body class="landing">
-        <div class="container">
+        <div class="bodyContainer">
             <nav class="navbar">
-                <div id="header-img"><a href="#"><img src="./images/aa-logo.png" /></a></div>
+                <div id="header-img"><a href="#"><img src="./images/aa-logo275X110.png" height="80"/></a></div>
                 <div id="headerInfo">
-                    <ul class="navigation">
+                    <ul class="nav-links">
                       <li><a href="index.html">Home</a></li>
                       <li><a href="#">Resume</a></li>
                       <li><a href="playground.html">Playground</a></li>
@@ -23,6 +24,24 @@
                 </div>
             </nav>
             <div> <!-- selling points -->
+                <div class="playground-text">
+                    <p>This page has some of the personal learning projects that I created learning JavaScript, jQuery and CSS.
+                    </p>
+                </div>
+                <div id="main" class="taskListForm formBox formBoxBody">
+                    <h2 class="title">Add Items</h2>
+                    <form class="form-inline mb-3">
+                      <input type="text" class="form-control mr-2">
+                      <input type="submit" class="btn btn-dark" value="Submit">
+                    </form>
+                    <h2 class="title">Items</h2>
+                    <ul id="items" class="list-group">
+                      <li class="list-group-item">Item 1</li>
+                      <li class="list-group-item">Item 2</li>
+                      <li class="list-group-item">Item 3</li>
+                      <li class="list-group-item">Item 4</li>
+                    </ul>
+                </div>
 
             </div>
         </div>
@@ -39,6 +58,7 @@
                   </div>
             </div>
         </footer>
+        <script src="scripts/playground.js"></script>
     </body>
 </html>
             
