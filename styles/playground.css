@@ -2,6 +2,18 @@
     padding-left: 2rem;
 }
 
+/*-------- Flexbox styles --------*/
+.flexContainer {
+    border: 1px solid black;
+    display: flex;
+    justify-content:space-around;
+}
+
+.flexContainer > div {
+    flex: 1;
+}
+
+/*--------- Form styles ----------*/
 .taskListForm {
     padding:15px; 
 }
@@ -13,7 +25,6 @@
     -ms-flex-direction: column;
     flex-direction: column;
     min-width: 0;
-    width: 400px;
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
@@ -38,4 +49,57 @@
 
 .form-inline .form-check {
   width: 100%;
+}
+
+
+/* -------- Styles for tablet size devices ---------- */ 
+@media all and (max-width: 800px) {
+   html { font-size: 120%; }
+    
+ /* -------- navigation styles ---------- */   
+  .nav-links {
+    justify-content: space-around;
+  }
+}
+
+
+/* -------- Styles for mobiles ---------- */ 
+@media all and (max-width: 600px) {
+   html { font-size: 112%; }
+    
+    .form-inline label {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin-bottom: 0;
+  }
+  .form-inline .form-group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    -ms-flex-align: center;
+        align-items: center;
+    margin-bottom: 0;
+  }
+  .form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+  .form-inline .form-control-plaintext {
+    display: inline-block;
+  }
+  .form-inline .input-group {
+    width: auto;
+  }
+  .form-inline .form-control-label {
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
 }

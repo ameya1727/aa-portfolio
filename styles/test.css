@@ -10,7 +10,7 @@ html {
  }
  
  body {
-     font-family: 'Roboto', sans-serif !important; /* sets our font to the "Open Sans" typeface */
+     font-family: 'Roboto', sans-serif; /* sets our font to the "Open Sans" typeface */
      font-weight: 300px;
      color: #4c4c4c;         
      min-height: 100%;  /* says the height of the body must be, at minimum, 100% of the window */
@@ -47,6 +47,7 @@ h1 {
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
+    border: 1px solid black;
  }
 
 .aa-HeaderImg {
@@ -193,7 +194,9 @@ footer {
 @media all and (max-width: 800px) {
    html { font-size: 120%; }
     
-   /* -------- navigation styles ---------- */   
+    
+    
+ /* -------- navigation styles ---------- */   
     
   .aa-navbar {
     padding: 0;
@@ -213,7 +216,7 @@ footer {
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
     padding: 0;
-    width: 400px;
+    width: 330px;
 }
   
   .aa-navLinks a { 
@@ -237,7 +240,7 @@ footer {
     #aa-headerInfo {
         display:block;
     }
-    
+
 /* -------------- Footer styles ---------------*/
   footer {
     width: 100%;

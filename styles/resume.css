@@ -1,38 +1,82 @@
-.resumecopy {
-    padding:15px;
+.contactContainer {
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-/* ------------------- Work Styles -------------------------------*/
-#work {
-    /*background-image: url('http://placekitten.com/1500/1000');*/
-    background-repeat: no-repeat;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;  
+
+.leftBar {
+    flex: 1;
+    padding:5px;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.work-title {
-    font-size: 24px;
-    font-weight: 800;
-    display: block;
-    min-height: 20px;
-    cursor:pointer;
-}
-.work-copy {
-    display: none;
+.lIntro {
+    border-bottom: 4px solid #34a853;
+    padding: 0 20px;
 }
 
-.work-copy-text {
-    float: left;
-    display: inline-block;
-    width:80%;
+.lContact {
+    padding: 0 20px;
+    border-bottom: 4px solid #fbbc05;
 }
 
-.work-copy-image {
-    display: inline-block;
+.rightBar {
+    display:flex;
+    flex:2;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 15px;
+}
+
+.rExperience {
+    /*background: #C2DFFF;*/
+    padding: 0 5px;
+    border-bottom: 4px solid #ea4335;
+}
+
+hr.rExperience {
+    color: #ea4335;
+}
+
+.rProjects {
+    /*background: #f0f0ff; */
+    padding: 0 5px;
+    border-bottom: 4px solid #7b1fa2;
+}
+
+/* -------- Styles for tablet size devices ---------- */ 
+@media all and (max-width: 800px) {
+    html { font-size: 120%; }
+    
+    .leftBar {
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    
+    .rightBar {
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    
     
 }
 
-hr {background-color: #3cb5f9;}
+
+/* -------- Styles for mobiles ---------- */ 
+@media all and (max-width: 600px) {
+    html { font-size: 112%; }
+    
+    .leftBar {
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    
+    .rightBar {
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+}
+    

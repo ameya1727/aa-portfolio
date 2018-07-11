@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ameya Athalye | Portfolio</title>
+        <link rel="icon" type="image/png" href="images/aa-logo.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,300">
+        <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/contact.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body class="landing">
+        <div class="bodyContainer">
+            <nav class="aa-navbar">
+                <div id="aa-headerImg" class="aa-headerImg"><a href="index.html"><img src="./images/aa-logo275X110.png" height="80"/></a></div>
+                <div id="aa-headerInfo" class="aa-headerInfo">
+                    <ul class="aa-navLinks">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="work.html">Work</a></li>
+                      <li><a href="resume.html">Resume</a></li>
+                      <li><a href="playground.html">Playground</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="contactFormIntro" class="contactFormIntro">
+                <h3>Hello! </h3>
+                <p>Thank you for visiting my portfolio website. Please let me know your feedback via the form below.</p>
+                <p>Have a great day ahead!</p>
+            </div>
+            <div id="contactForm" class="contactForm">
+                <form>
+                    <p>Full Name:</p>
+                    <input type="text" id="name" onblur="validateName(1, 32, this, document.getElementById('nameHelp'))" /><span id="nameHelp" class="namehelp"></span><br>
+                    <p>Email: </p>
+                    <input type="email" id="email" onblur="validataEmail(this, document.getElementById('emailHelp'))" /><span id="emailHelp" class="emailhelp"></span><br>
+                    <p>Zip: </p>
+                    <input type="text" id="zipcode" onblur="validateZip(this, document.getElementById('zipHelp'))" /><span id="zipHelp" class="ziphelp"></span><br>
+                    <p>Message: </p>
+                    <input type="textarea" id="message"><br><br>
+                    <button type="submit" id="submit" onclick="alert('Hello World!')">Send your message</button>
+                </form>
+            </div>
+        </div>
+        <div class="clearfix">&nbsp;</div>
+        <footer>
+            <div class="social-icons">
+                  <div id="social">
+                      <ul>
+                          <li><a href="https://twitter.com/ameya1727" target="_blank"><img src='images/twitter-logo.png' /></a></li>
+                          <li><a href="https://github.com/ameya1727" target="_blank"><img src='images/github-logo.png' /></a></li>
+                          <li><a href="https://www.facebook.com/ameya1727" target="_blank"><img src='images/facebook-logo.png' /></a></li>
+                          <li><a href="https://www.linkedin.com/in/ameyaathalye" target="_blank"><img src='images/linkedin-logo.png' /></a></li>
+                      </ul>
+                  <div class="base"></div>
+                  </div>
+            </div>
+        </footer>
+        <script src="scripts/contact.js"></script>
+    </body>
+</html>
