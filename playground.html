@@ -1,71 +1,83 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Ameya Athalye | Portfolio</title>
-        <link rel="icon" type="image/png" href="images/icon-aa-black1175x175.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,300">
-        <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="styles/main.css">
-        <link rel="stylesheet" type="text/css" href="styles/playground.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    </head>
-    <body class="landing">
-        <div class="bodyContainer">
-            <nav class="aa-navbar">
-                <div id="aa-headerImg" class="aa-headerImg"><a href="index.html"><img src="./images/aa-logo275X110.png" height="80"/></a></div>
-                <div id="aa-headerInfo" class="aa-headerInfo">
-                    <ul class="aa-navLinks">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="work.html">Work</a></li>
-                      <li><a href="resume.html">Resume</a></li>
-                      <li><a href="playground.html">Playground</a></li>
-                      <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="playground-text">
-                <p>This page has some of the personal learning projects that I created learning JavaScript, jQuery and CSS.
-                </p>
+
+<head>
+    <title>Ameya Athalye | Portfolio</title>
+    <link rel="icon" type="image/png" href="images/icon-aa-black1175x175.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,300">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/playground.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+
+<body class="landing">
+    <div class="bodyContainer">
+        <nav class="aa-navbar">
+            <div id="aa-headerImg" class="aa-headerImg">
+                <a href="index.html"><img src="./images/aa-logo275X110.png" height="80" /></a>
             </div>
-            <div class="flexContainer">
-                <div id="main" class="taskListForm formBox formBoxBody">
+            <div id="aa-headerInfo" class="aa-headerInfo">
+                <ul class="aa-navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="playground.html">Playground</a></li>
+                    <!-- <li><a href="contact.html">Contact</a></li> -->
+                </ul>
+            </div>
+        </nav>
+        <div class="playground-text">
+            <p>This page has some of the personal learning projects that I created learning JavaScript, jQuery and CSS.
+            </p>
+        </div>
+        <div class="flexContainer">
+            <div id="main" class="taskListForm formBox formBoxBody">
                 <h2 class="title">Playing with the DOM</h2>
                 <p>Add, delete, search items.</p>
                 <div class="">
                     <input type="text" class="form-control" id="filter" placeholder="Search Items..."><br><br>
                 </div>
                 <form id="addForm" class="form-inline mb-3">
-                  <input type="text" id="item" class="form-control mr-2">
-                  <input type="submit" class="btn btn-dark" value="Submit">
+                    <input type="text" id="item" class="form-control mr-2">
+                    <input type="submit" class="btn btn-dark" value="Submit">
                 </form>
                 <h2 class="title">Items</h2>
                 <ul id="items" class="list-group">
-                  <li class="list-group-item">Item 1 <button class="btn btn-danger btn-sm float-right delete">X</button></li>
-                  <li class="list-group-item">Item 2 <button class="btn btn-danger btn-sm float-right delete">X</button></li>
-                  <li class="list-group-item">Item 3 <button class="btn btn-danger btn-sm float-right delete">X</button></li>
-                  <li class="list-group-item">Item 4 <button class="btn btn-danger btn-sm float-right delete">X</button></li>
+                    <li class="list-group-item">Item 1 <button class="btn btn-danger btn-sm float-right delete">X</button></li>
+                    <li class="list-group-item">Item 2 <button class="btn btn-danger btn-sm float-right delete">X</button></li>
+                    <li class="list-group-item">Item 3 <button class="btn btn-danger btn-sm float-right delete">X</button></li>
+                    <li class="list-group-item">Item 4 <button class="btn btn-danger btn-sm float-right delete">X</button></li>
                 </ul>
             </div>
             <div>Panel 2</div>
             <div>Panel 3</div>
+        </div>
+    </div>
+    <footer>
+        <div class="social-icons">
+            <div id="social">
+                <ul>
+                    <li>
+                        <a href="https://twitter.com/ameya1727" target="_blank"><img src='images/twitter-logo.png' /></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/ameya1727" target="_blank"><img src='images/github-logo.png' /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/ameya1727" target="_blank"><img src='images/facebook-logo.png' /></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/ameyaathalye" target="_blank"><img src='images/linkedin-logo.png' /></a>
+                    </li>
+                </ul>
+                <div class="base"></div>
             </div>
         </div>
-        <footer>
-            <div class="social-icons">
-                  <div id="social">
-                      <ul>
-                            <li><a href="https://twitter.com/ameya1727" target="_blank"><img src='images/twitter-logo.png' /></a></li>
-                            <li><a href="https://github.com/ameya1727" target="_blank"><img src='images/github-logo.png' /></a></li>
-                            <li><a href="https://www.facebook.com/ameya1727" target="_blank"><img src='images/facebook-logo.png' /></a></li>
-                            <li><a href="https://www.linkedin.com/in/ameyaathalye" target="_blank"><img src='images/linkedin-logo.png' /></a></li>
-                      </ul>
-                  <div class="base"></div>
-                  </div>
-            </div>
-        </footer>
-        <script src="scripts/playground.js"></script>
-    </body>
+    </footer>
+    <script src="scripts/playground.js"></script>
+</body>
+
 </html>
-            
