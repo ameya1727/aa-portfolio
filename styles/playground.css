@@ -11,10 +11,9 @@
     justify-content: space-around;
 }
 
-
-/*.flexContainer>div {
+.flexContainer>div {
     flex: 1;
-} */
+}
 
 
 /*--------- Form styles ----------*/
