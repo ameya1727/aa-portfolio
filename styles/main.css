@@ -41,17 +41,23 @@ body.landing {
 
 /* -------- navigation styles ---------- */
 
-.aa-navbar {
-    position: relative;
+.navbar {
     background: #4285f4;
     color: white;
-    padding: 0 20px;
     font-weight: 500;
     font-size: 22px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: white;
+}
+
+
+.navbar li:hover {
+        border-bottom: 2px solid #7b1fa2;
+        font-size: 22px;
+        color: #7b1fa2;
+    }
 }
 
 .aa-HeaderImg {
@@ -67,33 +73,6 @@ body.landing {
 #aa-headerInfo {
     display: inline-block;
 }
-
-.aa-navLinks {
-    list-style: none;
-    vertical-align: middle;
-    margin: 0;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    justify-content: flex-start;
-}
-
-.aa-navLinks li:hover {
-    border-bottom: 5px solid #7b1fa2;
-    font-size: 22px;
-    color: #7b1fa2;
-}
-
-.aa-navLinks a {
-    text-decoration: none;
-    display: block;
-    padding: 1em;
-    color: white;
-}
-
 
 /* -------- myInfo styles ---------- */
 
