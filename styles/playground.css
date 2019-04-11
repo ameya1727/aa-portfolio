@@ -1,7 +1,11 @@
 .playground-text {
-    padding-left: 2rem;
+    padding: 2rem;
 }
 
+.row {
+    min-height: 200px;
+    border-bottom: 1px solid #000;
+}
 
 /*-------- Flexbox styles --------*/
 
@@ -138,4 +142,21 @@
         margin-bottom: 0;
         vertical-align: middle;
     }
+}
+
+
+/* Moving object */
+#rectRow {
+    width: 140px;
+    height: 160px;
+    position: relative;	
+}
+
+#animateBox {
+width: 30px;
+height: 30px;
+position: absolute;
+background-color: green;
+margin: 20px;
+
 }

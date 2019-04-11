@@ -1,19 +1,33 @@
+// Changing background color on mouseover in right div.
+var mousePlayListen = document.getElementById('rightDiv1').addEventListener('mouseover', mousePlay);
+
+function mousePlay(e) {
+    colorChangeOutput.innerHTML = '<p>MouseX: ' + e.offsetX + '</p><p>MouseY: ' + e.offsetY + '</p>';
+    document.getElementById('rightDiv1').style.backgroundColor = "rgb(40, " + e.offsetX + ", " + e.offsetY + ")";
+
+}
+
+rightDiv1.addEventListener('mouseout', function() {
+    document.getElementById('rightDiv1').style.backgroundColor = "#f4f4f4";
+})
+
+
 //Itemlist in left div.
-var form = document.getElementById('addForm');
-var itemList = document.getElementById('items');
-var filter = document.getElementById('filter');
+//var form = document.getElementById('addForm');
+//var itemList = document.getElementById('items');
+//var filter = document.getElementById('filter');
 
 //Form submit event
-form.addEventListener('submit', addItem);
+//form.addEventListener('submit', addItem);
 
 //Delete event
-itemList.addEventListener('click', removeItem);
+//itemList.addEventListener('click', removeItem);
 
 //Filter event
-filter.addEventListener('keyup', filterItems);
+//filter.addEventListener('keyup', filterItems);
 
 //Add item
-function addItem(e) {
+/*function addItem(e) {
 
     e.preventDefault();
 
@@ -73,17 +87,23 @@ function filterItems(e) {
             item.style.display = 'none';
         }
     });
-}
+} */
 
-// Changing background colr on mouseover in right div.
-var mousePlayListen = document.getElementById('rightDiv').addEventListener('mouseover', mousePlay);
+/* Javascript click and move */
+function myMove() {
+    var elem = document.getElementById("animateBox");   
+    var pos = 0;
+    var id = setInterval(frame, 5);
+    function frame() {
+        if (pos == 130) {
+            clearInterval(id);
+        } else {
+            pos++; 
+            elem.style.top = pos + "px"; 
+            elem.style.left = pos + "px"; 
+            //elem.style.bottom = pos + "px"; 
+            //elem.style.right = pos + "px";
 
-function mousePlay(e) {
-    colorChangeOutput.innerHTML = '<p>MouseX: ' + e.offsetX + '</p><p>MouseY: ' + e.offsetY + '</p>';
-    document.getElementById('rightDiv').style.backgroundColor = "rgb(40, " + e.offsetX + ", " + e.offsetY + ")";
-
-}
-
-rightDiv.addEventListener('mouseout', function() {
-    document.getElementById('rightDiv').style.backgroundColor = "#f4f4f4";
-})
+        }
+    }
+};

@@ -35,7 +35,40 @@
             </ul>
         </div>
     </nav>
-    <div class="bodyContainer">
+    <div class="container bodyContainer playground-text">
+        <h2>Checkout my fun learning projects</h2>
+        <p>This page is built using bootstrap 4 and flexbox.</p>
+        <p>Below you'll see various small projects I built while learning JavaScript, jQuery and CSS. Small description about the project on the left side (below for mobile devices) and what feature I've used.</p>
+        <p>Please feel free to let me know what you think.</p>
+        <!-- Mouseover color change -->
+        <div class="row">
+            <div class="col-sm-6 playground-text">
+                <h3>JavaScript mouseover property</h3>
+                <p>If you mouseover into this window the background will keep changing. As soon as you leave this div, the background will be light grey.</p>
+            </div>
+            <div class="col-sm-6 rightDiv1 playground-text" id="rightDiv1">
+                <p>Move your mouse in this area.</p>
+                <div id="colorChangeOutput"></div>
+            </div>
+        </div>
+        <!-- DOM manipulation -->
+        <div class="row">
+            <div class="col-sm-6 playground-text">
+                <h3>JavaScript click and move</h3>
+                <p>Click on any side of the square and it'll move the inner square diagonally. Everytime you click on a new side button the inner rectangle will reset, go back to it's original position and then move.</p>
+            </div>
+            <div class="col-sm-6">
+                <div class="row" style="width:202px; height: 200px;" id="rectRow">
+                    <div id ="animateBox"></div>
+                    <button style="width: 20px; height: 180px;" class="bg-danger" onclick="myMove()" id="left"></button>
+                    <button style="width: 160px; height: 20px;" class="bg-success" onclick="myMove()"></button>
+                    <button style="width: 20px; height: 180px;" class="bg-info" onclick="myMove()"></button>
+                    <button style="width: 200px; height: 20px;" class="bg-primary" onclick="myMove()"></button>
+			    </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="bodyContainer">
         <div class="playground-text">
             <h2>This page has some learning projects that I'm working on as I learn JavaScript, jQuery and CSS.
             </h2>
@@ -65,7 +98,8 @@
                 <div id="colorChangeOutput"></div>
             </div>
         </div>
-    </div>
+    </div> -->
+    <div style="height:300px;">&nbsp;</div>
     <footer>
         <div class="social-icons">
             <div id="social">
